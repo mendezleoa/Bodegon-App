@@ -26,8 +26,8 @@ function ProductForm({ addProduct }) {
         <input type="text" name="category" onChange={handleChange} />
         <label>Precio</label>
         <input type="number" name="price" onChange={handleChange} />
-        <label>Stock</label>
-        <input type="number" name="stock" onChange={handleChange} />
+        <label>Existencia</label>
+        <input type="number" name="existencia" onChange={handleChange} />
         <button type="submit">Agregar</button>
       </form>
     );
