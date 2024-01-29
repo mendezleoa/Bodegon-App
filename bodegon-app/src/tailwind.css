@@ -8,30 +8,6 @@
   font-family: 'Kodchasan', sans-serif;
 }
 
-.main {
-  padding: 1rem;
-}
-
-h3 {
-  font-size: x-large;
-}
-
-p {
-  font-size: large;
-}
-
-.navbar {
-  font-family: 'Kodchasan', sans-serif;
-  padding: 1rem 2rem;
-  background-color: cadetblue;
-  color: azure;
-  font-size: x-large;
-}
-
-input {
-  border: solid black 1px;
-}
-
 td,
 th {
   border: solid rgb(26, 26, 26) 2px;

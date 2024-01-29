@@ -8,27 +8,27 @@ function Product({ product, index, editProduct, deleteProduct }) {
   };
 
   return (
-    <tr className="product">
+    <tr className="product sm:text-lg">
       {isEditing ? (
         <>
           <td>
             <p>N/a</p>
           </td>
           <td>
-            <input type="text" defaultValue={product.name} />
+            <input className='bg-[#B5FFFF] border border-[#239089] text-gray-900 text-sm rounded-lg w-30 py-1 px-4' type="text" defaultValue={product.name} />
           </td>
           <td>
-            <input type="text" defaultValue={product.category} />
+            <input className='bg-[#B5FFFF] border border-[#239089] text-gray-900 text-sm rounded-lg w-30 py-1 px-4' type="text" defaultValue={product.category} />
           </td>
           <td>
-            <input type="number" defaultValue={product.price} />
+            <input className='bg-[#B5FFFF] border border-[#239089] text-gray-900 text-sm rounded-lg w-20 py-1 px-4' type="number" defaultValue={product.price} />
           </td>
           <td>
-            <input type="number" defaultValue={product.existencia} />
+            <input className='bg-[#B5FFFF] border border-[#239089] text-gray-900 text-sm rounded-lg w-20 py-1 px-4' type="number" defaultValue={product.existencia} />
           </td>
           <td>
-            <button onClick={() => toggleEdit(false)}>Cancelar</button>
-            <button onClick={() => editProduct(index, product)}>Guardar</button>
+            <button className='text-gray-900 text-sm bg-[#F8A6A6] border border-[#F66E6E] mx-2 rounded-md sm:w-auto py-1 px-3 w-full text-center' onClick={() => toggleEdit(false)}>Cancelar</button>
+            <button className='text-gray-900 text-sm bg-[#C4F1B9] border border-[#A5EB94] mx-2 rounded-md sm:w-auto py-1 px-3 w-full text-center' onClick={() => editProduct(index, product)}>Guardar</button>
           </td>
         </>
       ) : (
@@ -39,8 +39,8 @@ function Product({ product, index, editProduct, deleteProduct }) {
           <td>{product.price}</td>
           <td>{product.existencia}</td>
           <td>
-            <button onClick={() => toggleEdit(true)}>Editar</button>
-            <button onClick={() => deleteProduct(index)}>Eliminar</button>
+            <button className='text-gray-900 text-sm bg-[#8AE0DB] border border-[#239089] mx-2 rounded-md sm:w-auto py-1 px-3 w-full text-center' onClick={() => toggleEdit(true)}>Editar</button>
+            <button className='text-gray-900 text-sm bg-[#F8A6A6] border border-[#F66E6E] mx-2 rounded-md sm:w-auto py-1 px-3 w-full text-center' onClick={() => deleteProduct(index)}>Eliminar</button>
           </td>
         </>
       )}

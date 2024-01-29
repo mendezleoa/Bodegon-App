@@ -3,7 +3,7 @@ import Product from './Product';
 
 function ProductList({ products, editProduct, deleteProduct }) {
   return (
-    <table className='product-list text-center'>
+    <table className='product-list text-center table-auto w-full'>
       <thead>
         <tr>
           <th className='px-3 py-1'>id</th>

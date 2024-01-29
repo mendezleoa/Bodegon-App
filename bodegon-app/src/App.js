@@ -42,18 +42,24 @@ function App() {
 
   return (
     <>
-      <nav className="navbar">
-        <h1>Bodegón Pablo</h1>
+      <nav className="navbar bg-[#239089] py-6 px-8">
+        <h1 className='text-2xl font-semibold'>Bodegón UVM</h1>
       </nav>
-      <main className="main">
-        <h1 className="text-3xl text-emerald-950 font-bold">
+      <main className="main mx-2 my-6">
+        <h1 className="text-3xl text-emerald-950 font-semibold ml-5 mb-2">
           Aqui va un titulo para la tabla.
         </h1>
-        <input type="text" placeholder="Buscar por nombre, categoría o precio" onChange={(e) => setSearch(e.target.value)} />
-        <div className='container m-4' id="table">
-        <ProductList products={filterProducts(search)} editProduct={editProduct} deleteProduct={deleteProduct} />
+        <p className='ms-5 mb-8'>Ingresa los datos que quieres agregar y modificalos dentro de la tabla.</p>
+        <div className='mx-5 flex flex-col'>
+          <input className='bg-[#B5FFFF] border border-[#239089] text-gray-900 placeholder-[#545454] text-sm rounded-lg max-w-[28rem] w-70 py-1.5 px-4 flex-none grow-0' type="text" placeholder="Buscar por nombre, categoría o precio" onChange={(e) => setSearch(e.target.value)} />
+          <div className='container m-4 flex-1 bg-[#5DC1B9] p-10 rounded-2xl overflow-x-auto align-center' id="table">
+            <ProductList products={filterProducts(search)} editProduct={editProduct} deleteProduct={deleteProduct} />
+          </div>
         </div>
-        <ProductForm addProduct={addProduct} />
+        <div className='my-5'>
+          <h2 className='text-lg mb-2 ml-3'>Agregar productos</h2>
+          <ProductForm addProduct={addProduct} />
+        </div>
       </main>
     </>
   );
