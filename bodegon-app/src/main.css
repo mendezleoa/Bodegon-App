@@ -485,12 +485,126 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
+.relative {
+  position: relative;
+}
+.z-0 {
+  z-index: 0;
+}
+.m-4 {
+  margin: 1rem;
+}
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
 .table {
   display: table;
+}
+.grid {
+  display: grid;
+}
+.w-40 {
+  width: 10rem;
+}
+.w-80 {
+  width: 20rem;
+}
+.w-full {
+  width: 100%;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.rounded-md {
+  border-radius: 0.375rem;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+.border {
+  border-width: 1px;
+}
+.border-\[\#239089\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(35 144 137 / var(--tw-border-opacity));
+}
+.bg-\[\#5DC1B9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(93 193 185 / var(--tw-bg-opacity));
+}
+.bg-\[\#8AE0DB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(138 224 219 / var(--tw-bg-opacity));
+}
+.bg-\[\#B5FFFF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(181 255 255 / var(--tw-bg-opacity));
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.p-5 {
+  padding: 1.25rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.text-center {
+  text-align: center;
 }
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .font-bold {
   font-weight: 700;
@@ -499,10 +613,18 @@ video {
   --tw-text-opacity: 1;
   color: rgb(2 44 34 / var(--tw-text-opacity));
 }
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@200&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
+  font-family: 'Kodchasan', sans-serif;
 }
 
 .main {
@@ -518,13 +640,36 @@ p {
 }
 
 .navbar {
+  font-family: 'Kodchasan', sans-serif;
   padding: 1rem 2rem;
   background-color: cadetblue;
   color: azure;
   font-size: x-large;
 }
 
+input {
+  border: solid black 1px;
+}
+
 td,
 th {
   border: solid rgb(26, 26, 26) 2px;
+}
+
+@media (min-width: 640px) {
+
+  .sm\:w-auto {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
+  }
 }

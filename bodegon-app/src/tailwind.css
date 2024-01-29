@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@200&display=swap');
+
+* {
+  font-family: 'Kodchasan', sans-serif;
+}
+
 .main {
   padding: 1rem;
 }
@@ -15,6 +21,7 @@ p {
 }
 
 .navbar {
+  font-family: 'Kodchasan', sans-serif;
   padding: 1rem 2rem;
   background-color: cadetblue;
   color: azure;

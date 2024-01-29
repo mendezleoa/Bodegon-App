@@ -3,15 +3,15 @@ import Product from './Product';
 
 function ProductList({ products, editProduct, deleteProduct }) {
   return (
-    <table className='product-list'>
+    <table className='product-list text-center'>
       <thead>
         <tr>
-          <th>id</th>
-          <th>Nombre</th>
-          <th>Categoría</th>
-          <th>Precio</th>
-          <th>Existencia</th>
-          <th>Acciones</th>
+          <th className='px-3 py-1'>id</th>
+          <th className='px-3 py-1'>Nombre</th>
+          <th className='px-3 py-1'>Categoría</th>
+          <th className='px-3 py-1'>Precio</th>
+          <th className='px-3 py-1'>Existencia</th>
+          <th className='px-3 py-1'>Acciones</th>
         </tr>
       </thead>
       <tbody>
