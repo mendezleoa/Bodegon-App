@@ -47,7 +47,7 @@ function App() {
       </nav>
       <main className="main mx-2 my-6">
         <h1 className="text-3xl text-emerald-950 font-semibold ml-5 mb-2">
-          Aqui va un titulo para la tabla.
+        Gestión de productos
         </h1>
         <p className='ms-5 mb-8'>Ingresa los datos que quieres agregar y modificalos dentro de la tabla.</p>
         <div className='mx-5 flex flex-col'>
